@@ -1,0 +1,96 @@
+.skills{
+padding:100px 20px;
+background:linear-gradient(135deg,#eef2ff,#f8fafc);
+text-align:center;
+}
+
+.skills h1{
+font-size:40px;
+margin-bottom:60px;
+font-weight:700;
+color:#1e293b;
+letter-spacing:1px;
+}
+
+.grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:35px;
+}
+
+.card{
+padding:30px;
+border-radius:20px;
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(10px);
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+transition:all .35s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 20px 50px rgba(0,0,0,0.15);
+}
+
+.circle{
+width:140px;
+height:140px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+position:relative;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:0.4s;
+}
+
+.card:hover .circle{
+transform:rotate(5deg) scale(1.05);
+}
+
+.inner{
+width:105px;
+height:105px;
+border-radius:50%;
+background:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+font-weight:600;
+color:#334155;
+}
+
+.icon{
+font-size:26px;
+margin-bottom:5px;
+color:#3b82f6;
+}
+
+.card h3{
+margin-top:15px;
+font-size:18px;
+color:#1e293b;
+}
+
+.inner span{
+font-size:14px;
+color:#64748b;
+}
+
+@media(max-width:768px){
+
+.circle{
+width:120px;
+height:120px;
+}
+
+.inner{
+width:90px;
+height:90px;
+}
+
+}
